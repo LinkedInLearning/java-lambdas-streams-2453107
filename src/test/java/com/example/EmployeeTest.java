@@ -11,24 +11,24 @@ class EmployeeTest {
   @Test
   void employeeFullName() {
     Employee employee = new Employee();
-    employee.setFirstName("FirstName");
-    employee.setLastName("SecondName");
+    employee.setFirstName("Jerome");
+    employee.setLastName("Donaldson");
 
     String actual = employeeUtils.getFullName(employee);
 
-    assertThat(actual).isEqualTo("FirstName SecondName");
+    assertThat(actual).isEqualTo("Jerome Donaldson");
   }
 
   @Test
   void employeeManagersLastName() {
     Employee employee1 = new Employee();
     Employee employee2 = new Employee();
-    employee2.setLastName("SecondName");
+    employee2.setLastName("Westbay");
     employee1.setManager(employee2);
 
     String actual = employeeUtils.getManagersLastName(employee1);
 
-    assertThat(actual).isEqualTo("SecondName");
+    assertThat(actual).isEqualTo("Westbay");
   }
 
   @Test
