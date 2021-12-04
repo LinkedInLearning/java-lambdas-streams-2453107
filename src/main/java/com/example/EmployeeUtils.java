@@ -29,4 +29,5 @@ public class EmployeeUtils {
     Predicate<Employee> moreThanThreeYearsOfServiceAndLessThanTwoDirectReports = null;
     return moreThanThreeYearsOfServiceAndLessThanTwoDirectReports.test(employee);
   }
+
 }
