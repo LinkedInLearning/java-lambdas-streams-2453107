@@ -12,15 +12,21 @@ public class PlanetUtils {
   }
 
   public List<Planet> getPlanetsWithRings(List<Planet> planets) {
-    return null;
+    return planets.stream()
+            .filter(planet -> planet.getHasRings())
+            .collect(Collectors.toList());
   }
 
   public List<Planet> getPlanetsWithMoreThanThreeMoons(List<Planet> planets) {
-    return null;
+    return planets.stream()
+            .filter(planet -> planet.getNumberOfMoons() > 3)
+            .collect(Collectors.toList());
   }
 
   public List<Planet> getPlanetsWithDensityGreaterThanFive(List<Planet> planets) {
-    return null;
+    return planets.stream()
+            .filter(planet -> planet.getDensity() > 5)
+            .collect(Collectors.toList());
   }
 
 }
