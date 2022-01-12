@@ -1,7 +1,6 @@
 # Java: Lambdas and Streams
 This is the repository for the LinkedIn Learning course `Java: Lambdas and Streams`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -22,9 +21,12 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+    - Java 8 or above
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+3. To run the tests in the exercises, either run them directly in your IDE or from terminal on Mac or CMD on Windows. 
+4. If running the tests from the terminal or CMD, navigate to the directory where you checked out the code. The command to run the tests is:
+   - `./mvnw clean install` on Mac
+   - `./mvnw.cmd clean install` on Windows
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
